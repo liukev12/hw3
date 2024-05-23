@@ -2,6 +2,12 @@
 
 <ul>
   <% @places.each do |place| %>
-    <li><%= place.name %></li>
+    <li>
+      <a href="/places/<%= place.id %>"><%= place.name %></a>
+    </li>
   <% end %>
 </ul>
+
+<p>
+  <a href="/places/new">New Place</a>
+</p>
