@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   # post "places", controller => "places", :action => "create"
 
   resources "entries"
+    # get "entries/new", controller => "entries", :action => "new"
+  # post "entries", controller => "entries", :action => "create"
 end
